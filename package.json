@@ -1,0 +1,29 @@
+{
+  "name": "node_lab2",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000N\u0000o\u0000d\u0000e\u0000_\u0000l\u0000a\u0000b\u00002\u0000\r\u0000 \u0000",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Glade777/Node_lab2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Glade777/Node_lab2/issues"
+  },
+  "homepage": "https://github.com/Glade777/Node_lab2#readme",
+  "dependencies": {
+    "debug": "^4.4.3",
+    "dotenv": "^17.3.1",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
