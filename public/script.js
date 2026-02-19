@@ -1,5 +1,11 @@
-const btn = document.querySelector(".btn");
+const info = document.querySelector(".info");
 
-btn.addEventListener("click", () => {
+info.addEventListener("click", () => {
   window.location.href = `/info`;
+});
+
+const news = document.querySelector(".news");
+
+news.addEventListener("click", () => {
+  window.location.href = `/news`;
 });
