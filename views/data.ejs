@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Наша Бригада</h1>
-    <ul>
-      <% student.forEach(function(student) {
-        %><li>
-          <h2>Ім'я: <%= student.name%></h2>
-          <h2>Група: <%= student.group%></h2>
-          <h2>Спеціальність: <%= student.major%></h2>
-        </li><%
-      }) 
-      %>
-    </ul>
-  </body>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Наша бригада</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+<h1>Наша бригада</h1>
+
+<div class="container">
+    <% student.forEach(function(item) { %>
+        <div class="card">
+            <h2><%= item.name %></h2>
+            <p><b>Група:</b> <%= item.group %></p>
+            <p><b>Спеціальність:</b> <%= item.major %></p>
+        </div>
+    <% }) %>
+</div>
+
+<a class="back" href="/">← На головну</a>
+
+</body>
 </html>

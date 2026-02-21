@@ -9,10 +9,11 @@ app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.static("public"));
 
-const PORT = process.env.PORT; // .env: PORT = 8080
+const PORT = process.env.PORT || 8080;
 
 app.use("/", router);
 
 app.listen(PORT, () => {
   console.log(`Server is listened on port ${PORT}`);
 });
+//http://localhost:8080/

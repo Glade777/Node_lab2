@@ -1,34 +1,36 @@
+console.log("ROUTES FILE LOADED:", __filename);
 const express = require("express");
 const router = express.Router();
 const path = require("path");
 
 //статична сторінка
 router.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "public", "index.html"));
 });
 
 //тут буде ендпоінт динамічної сторінки res.render
 router.get("/info", (req, res) => {
+
   const Students = [
     {
-      group: "IS-43",
-      name: "Alice",
-      major: "Computer Science",
+      group: "ІС-43",
+      name: "Анна",
+      major: "ІСтаТ",
     },
     {
-      group: "IS-43",
-      name: "Bob",
-      major: "Mathematics",
+      group: "ІС-43",
+      name: "Дмитро",
+      major: "ІСтаТ",
     },
     {
-      group: "IS-41",
-      name: "Bob",
-      major: "Mathematics",
+      group: "ІС-41",
+      name: "Софія",
+      major: "ІСтаТ",
     },
     {
-      group: "IS-41",
-      name: "Bob",
-      major: "Mathematics",
+      group: "ІС-41",
+      name: "Дарія",
+      major: "ІСтаТ",
     },
   ];
 

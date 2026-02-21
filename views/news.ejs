@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <% articles.forEach(article => { %>
-  <div>
-    <h3><%= article.title %></h3>
-    <p><%= article.description %></p>
-    
-    <small>Джерело: <%= article.source.name %></small>
-  
-  </div>
-<% }) %>
-  </body>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Новини</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+<h1>Новини технологій</h1>
+
+<div class="news-container">
+
+  <% articles.forEach(article => { %>
+    <div class="news-card">
+      <h3><%= article.title %></h3>
+      <p><%= article.description %></p>
+      <small>Джерело: <%= article.source.name %></small>
+    </div>
+  <% }) %>
+
+</div>
+
+<a class="back" href="/">← На головну</a>
+
+</body>
 </html>

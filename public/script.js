@@ -9,3 +9,4 @@ const news = document.querySelector(".news");
 news.addEventListener("click", () => {
   window.location.href = `/news`;
 });
+
