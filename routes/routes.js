@@ -10,7 +10,6 @@ router.get("/", (req, res) => {
 
 //тут буде ендпоінт динамічної сторінки res.render
 router.get("/info", (req, res) => {
-
   const Students = [
     {
       group: "ІС-43",
